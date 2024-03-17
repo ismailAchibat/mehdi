@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Résultats des matchs</title>
+  <link rel="stylesheet" type="text/css" href="foot.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Résultats des matchs</h1>
+
+    <div id="match-form">
+      <input type="text" id="team1" placeholder="Équipe 1" required>
+      <input type="text" id="team2" placeholder="Équipe 2" required>
+      <input type="text" id="score" placeholder="Score (ex. 4-5)" required>
+      <button onclick="addResult()">Ajouter</button>
+    </div>
+
+    <table id="results-table">
+      <thead>
+        <tr>
+          <th>Équipe 1</th>
+          <th>Équipe 2</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="results-body">
+      </tbody>
+    </table>
+  </div>
+
+  <script src="foot.js"></script>
+</body>
+</html>
